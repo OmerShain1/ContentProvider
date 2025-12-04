@@ -1,0 +1,11 @@
+<resources>
+	<string name="app_name">ContentProvider</string>
+
+	<string name="sw_find_text">Find by…</string>
+	<string name="sw_call_text">Allow Calls</string>
+
+	<string name="name_text">Enter Name</string>
+	<string name="phone_text">Enter Phone</string>
+
+	<string name="find_text">Find</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr">
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+		<Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:checked="true"
+            android:gravity="center"
+            android:hint="@string/sw_find_text"
+            android:textSize="15sp"
+            android:id="@+id/swFind"/>
+
+		<Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:checked="true"
+            android:gravity="center"
+            android:hint="@string/sw_call_text"
+            android:textSize="15sp"
+            android:id="@+id/swCall"/>
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+		<EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:layout_margin="5dp"
+            android:hint="@string/name_text"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:id="@+id/etName"/>
+
+		<Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/find_text"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:id="@+id/btnFindByName"/>
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+		<EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:layout_margin="5dp"
+            android:hint="@string/phone_text"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:id="@+id/etPhone"/>
+
+		<Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/find_text"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:id="@+id/btnFindByPhone"/>
+	</LinearLayout>
+
+	<ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lvContacts"/>
+</LinearLayout>
